@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProfileCard from './ProfileCard';
+import Loading from './Loading';
 
 const YourComponent = () => {
   const [data, setData] = useState([]);
@@ -23,7 +24,7 @@ const YourComponent = () => {
   }, []); // Empty dependency array means this effect runs once after the initial render
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
 
   if (error) {

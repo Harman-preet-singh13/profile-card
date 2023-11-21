@@ -22,7 +22,7 @@ export default function ProfileCard({
           <div className="h-full  bg-blue-200 border border-slate-200 shadow-xl">
             <div className="bg-white mb-5 flex justify-center">
               <img
-                className="my-5 rounded-full object-center"
+                className="my-5 rounded-full object-center bg-slate-700"
                 src={userImgLg}
               />
             </div>
@@ -54,7 +54,7 @@ export default function ProfileCard({
           <div className="h-full  bg-blue-200 border border-slate-200 shadow-xl">
             <div className=" bg-blue-200 ">
               <div className=" flex justify-center">
-                <img className="my-5 rounded-full profile-img" src={userImgLg} />
+                <img className="my-5 rounded-full profile-img bg-slate-700" src={userImgLg} />
               </div>
               <div className="bg-white py-5 about-section h-[250px]">
                 <h2 className="text-lg pt-14 font-semibold">
